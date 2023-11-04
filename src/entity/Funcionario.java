@@ -17,6 +17,10 @@ public class Funcionario {
     private String sg_estado = null;
     private String nm_municipio = null;
     
+    
+    /** 
+     * @return String
+     */
     public String getTpFj(){
         return this.tp_fj;
     }

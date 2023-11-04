@@ -237,6 +237,10 @@ public class ViewConsultaCliente extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    
+    /** 
+     * @param Funcionario(
+     */
     private void btnLimpa1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLimpa1ActionPerformed
         limpaForm();
     }//GEN-LAST:event_btnLimpa1ActionPerformed

@@ -6,6 +6,14 @@ import javax.swing.JComboBox;
 public class TDBComboBox {    
     MySQL db = new MySQL();
     
+    
+    /** 
+     * @param cb
+     * @param table
+     * @param field
+     * @param orderby
+     * @return boolean
+     */
     public boolean setStatus(JComboBox cb,String table,String field,String orderby) {      
         
         try {

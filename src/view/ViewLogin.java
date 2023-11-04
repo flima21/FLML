@@ -160,6 +160,10 @@ public class ViewLogin extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
+    
+    /** 
+     * @param KeyEvent.VK_ENTER
+     */
     private void btnCadUserActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCadUserActionPerformed
         ViewRegisterUser myRegister = new ViewRegisterUser();
 

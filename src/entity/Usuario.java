@@ -11,6 +11,11 @@ public class Usuario {
     private String nome = null;
     
     
+    
+    /** 
+     * @param text
+     * @return char[]
+     */
     public static char[] hexCodes(byte[] text) {
         char[] hexOutput = new char[text.length * 2];
         String hexString;

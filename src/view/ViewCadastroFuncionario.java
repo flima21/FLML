@@ -260,6 +260,10 @@ public class ViewCadastroFuncionario extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
+    
+    /** 
+     * @param (rbHabilitarCpf.isSelected()
+     */
     private void cbEstadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cbEstadoActionPerformed
         
     }//GEN-LAST:event_cbEstadoActionPerformed

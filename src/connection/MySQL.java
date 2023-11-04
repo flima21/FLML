@@ -40,6 +40,10 @@ public class MySQL {
         this.senha = senha;
     }
     
+    
+    /** 
+     * @return Connection
+     */
     public Connection getConn() {
         return conn;
     }

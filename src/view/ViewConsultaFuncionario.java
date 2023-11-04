@@ -264,6 +264,10 @@ public class ViewConsultaFuncionario extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
+    
+    /** 
+     * @param evt
+     */
     private void btnAtualizabtnCadastra(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAtualizabtnCadastra
         try {
             mysqldb.conectaBanco();

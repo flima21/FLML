@@ -6,6 +6,10 @@ public class Status {
     private String cd_status;
     private String nm_status;
     
+    
+    /** 
+     * @return int
+     */
     public int getId(){
         return this.id;
     }

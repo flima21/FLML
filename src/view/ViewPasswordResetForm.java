@@ -117,6 +117,10 @@ public class ViewPasswordResetForm extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
+    
+    /** 
+     * @param txtLogin.getText(
+     */
     private void btnPasswordResetActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPasswordResetActionPerformed
         String newPass = String.valueOf(passNewSenha.getPassword());
         String confirmPass = String.valueOf(passConfirmNewSenha.getPassword());

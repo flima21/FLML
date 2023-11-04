@@ -17,6 +17,10 @@ public class Jogo {
     private double vl_preco;
     private double vl_quantidade;
     
+    
+    /** 
+     * @return String
+     */
     public String getCdJogo(){
         return this.cd_jogo;
     }

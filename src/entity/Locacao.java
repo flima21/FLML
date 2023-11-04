@@ -13,6 +13,10 @@ public class Locacao {
     
     private double vl_preco;
     
+    
+    /** 
+     * @return String
+     */
     public String getNmJogo(){
         return this.nm_jogo;
     }

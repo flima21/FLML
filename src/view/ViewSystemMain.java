@@ -163,6 +163,11 @@ public class ViewSystemMain extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
+    
+    /** 
+     * @param JOptionPane.showConfirmDialog(rootPane
+     * @param 0
+     */
     private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
         ViewCadastroFuncionario getViewCadastroFuncionario = new ViewCadastroFuncionario();
         
