@@ -3,6 +3,12 @@
 ------------------------------------------------------------------------------*/
 package entity;
 
+/**
+ * @author Felipe Lima
+ * @version 1.0
+ * 
+ * Classe para realizar formtaçãoes
+ */
 public class Fmt {
     
     
@@ -11,7 +17,7 @@ public class Fmt {
      * @return String
      */
     public String NrDb(String cpfcnpj){  
-        String valor = cpfcnpj.replaceAll("[./-]", "");
+        String valor = cpfcnpj.replaceAll("[./-]", ""); // Remove . / - [] por vázio
         
         return valor;
     }

@@ -13,11 +13,11 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author gusta
+ * @author Felipe Lima
  */
 public class ViewLogin extends javax.swing.JFrame {
-    MySQL mysqldb = new MySQL();
-    Usuario user = new Usuario();
+    MySQL mysqldb = new MySQL(); // Variável para manipular o banco de dados
+    Usuario user = new Usuario(); // Para conseguir pegar os usuarios
     
     /** Creates new form ViewLogin */
     public ViewLogin() {
@@ -170,6 +170,7 @@ public class ViewLogin extends javax.swing.JFrame {
         myRegister.setVisible(true);
     }//GEN-LAST:event_btnCadUserActionPerformed
 
+
     private void btnResetSenhaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnResetSenhaActionPerformed
         // TODO add your handling code here:
         ViewPasswordResetForm myPassword = new ViewPasswordResetForm(); //cria janela
@@ -245,6 +246,9 @@ public class ViewLogin extends javax.swing.JFrame {
     private javax.swing.JTextField txtUser;
     // End of variables declaration//GEN-END:variables
 
+    /**
+     * Efetua login no banco e caso ache usuario, transfere para outra tela.
+     */
     private void tentarLogin() {
         mysqldb.conectaBanco();
         try {
@@ -259,7 +263,7 @@ public class ViewLogin extends javax.swing.JFrame {
                     + user +"' "
                     + "and senha = '"+pass+"'";
             
-            this.mysqldb.executarSQL(query);
+            this.mysqldb.executarSQL(query); // Executa o sql
 
             int count = 0;
 
@@ -271,9 +275,9 @@ public class ViewLogin extends javax.swing.JFrame {
                 
                 ViewSystemMain mySystem = new ViewSystemMain();
                 
-                this.setVisible(false);
+                this.setVisible(false); // Tira da tela o login 
                 
-                mySystem.setVisible(true);
+                mySystem.setVisible(true); // Abre a tela de inicio do sistema
                 
             } else {
                 JOptionPane.showMessageDialog(rootPane, "Usuário ou senha inválidos");
